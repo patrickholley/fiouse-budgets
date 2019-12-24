@@ -1,14 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-import SignIn from './components/SignIn';
+import { BrowserRouter } from 'react-router-dom';
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Switch>
-        <Route exact path="/signin" component={SignIn} />
-        <Redirect to="/signin" />
-      </Switch>
+      <div>Hello World!</div>
     </BrowserRouter>
   );
 }
