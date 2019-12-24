@@ -1,6 +1,6 @@
 import React from 'react';
 import "./AuthHeader.scss";
-import Logo from "../../../assets/f_logo_clear.png";
+import Logo from "../../../assets/images/f_logo_clear.png";
 
 function AuthHeader({ children, title }) {
   const Heading = `h${title === "Fiouse Budgets" ? 1 : 2}`;
@@ -9,7 +9,9 @@ function AuthHeader({ children, title }) {
     <div className="auth-header">
       <img alt="fiouse logo" className="auth-header__logo" src={Logo} />
       <Heading className="auth-header__title">{title}</Heading>
-      {children}
+      <div className="auth-header__route-view">
+        {children}
+      </div>
     </div>
   );
 }

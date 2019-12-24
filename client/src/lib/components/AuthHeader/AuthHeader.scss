@@ -7,8 +7,30 @@
 
 .auth-header__logo {
   height: 150px;
+  margin-top: 25px;
+}
+
+.auth-header__route-view {
+  background-color: var(--blue_lighter);
+  border-radius: 5px;
+  padding: 50px;
+  width: 250px;
 }
 
 .auth-header__title {
+  font-family: "Girassol";
+  letter-spacing: 4px;
+  margin: 25px;
+  text-transform: uppercase;
+  $fontSize: 48px;
+  font-size: $fontSize;
+  line-height: $fontSize;
   
+  @at-root {
+    h2#{&} {
+      $fontSize: 32px;
+      font-size: $fontSize;
+      line-height: $fontSize;
+    }
+  }
 }
