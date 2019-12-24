@@ -11,10 +11,17 @@
 }
 
 .auth-header__route-view {
+  align-items: center;
   background-color: var(--blue_lighter);
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
   padding: 50px;
   width: 250px;
+
+  & *:not(:last-child) {
+    margin-bottom: 25px;
+  }
 }
 
 .auth-header__title {

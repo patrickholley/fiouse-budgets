@@ -1,10 +1,16 @@
 import React from 'react';
+import Button from "../../lib/components/Button";
+import TextInput from "../../lib/components/TextInput";
 import "./CreateAccount.scss";
 
 function CreateAccount() {
   return (
     <div className="create-account">
-      Create Account
+      <TextInput />
+      <TextInput />
+      <TextInput />
+      <Button />
+      <Button />
     </div>
   );
 }
